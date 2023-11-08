@@ -64,7 +64,7 @@ git clone https://github.com/DoumitC/SHIS.git
 ```
 ### Step 6: Navigate to Repo Folder and run setup.sh
 
-1. Run following commands:
+1. Run following commands to run scipt that compiles C++ main file:
 ```bash
 cd SHIS
 ./setup.h
