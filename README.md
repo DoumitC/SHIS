@@ -62,16 +62,22 @@ sh setup.sh
 ```bash
 git clone https://github.com/DoumitC/SHIS.git
 ```
-   
-### Step 6: Navigate to Repo Folder and Run autorun.sh
+### Step 6: Navigate to Repo Folder and run setup.sh
 
-1. Navigate to the repository folder in the terminal.
-2. Run the autorun script to start the program by running the following commands:
+1. Run following commands:
 ```bash
 cd SHIS
+./setup.h
+```
+   
+### Step 7: Run autorun.sh
+
+1. While still in Repo Folder.
+2. Run the autorun script to start the program by running the following commands:
+```bash
 ./autorun.sh
 ```
-### Step 7: Register Device with Amazon Account
+### Step 8: Register Device with Amazon Account
 
 1. If this is your first time running the program, execute it from the terminal and follow the on-screen instructions to register your device with your Amazon account.
 
