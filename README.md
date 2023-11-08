@@ -34,12 +34,28 @@ sudo apt install pulseaudio pulseaudio-utils
 ### Step 3: Add OpenCV Library
 
 1. Add the OpenCV library to your system. OpenCV is used for image and video analysis and will help in recognizing the hand gestures through the camera feed.
+2. First we need to get the Prerequesites by executing following command:
+```bash
+sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev libjasper-dev libpng-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libfontconfig1-dev libcairo2-dev libgdk-pixbuf2.0-dev libpango1.0-dev libgtk2.0-dev libgtk-3-dev libatlas-base-dev gfortran libhdf5-dev libhdf5-serial-dev libhdf5-103 python3-pyqt5 python3-dev -y
+```
+3. Install OpenCV library with the following command:
+```bash
+sudo apt-get install python-opencv
+```
 
-### Step 4: Add Google's MediaPipe Library
+### Step 4: Add Google's MediaPipe Library and Dependencies
 
 1. Install Google's MediaPipe library, a framework for building multimodal (e.g., video, audio, any time-series data) applied machine learning pipelines.
 2. MediaPipe will be responsible for the gesture recognition process.
-
+3. First Clone MediaPipe's repo:
+```bash
+git clone https://github.com/googlesamples/mediapipe.git
+```
+4. Run following commands to get task file and install required dependecies
+```bash
+cd mediapipe/examples/gesture_recognizer/raspberry_pi
+sh setup.sh
+```
 ### Step 5: Clone the SHIS Repository
 
 1. Clone the SHIS repository from GitHub to your local machine by running this command:
