@@ -115,10 +115,11 @@ string fileController(string filename,time_t lastTimestamp){
 
 
 int main() {
-    string Command1 = PathToFiles+"Weather.wav";
-    string Command2 = PathToFiles+"Time.wav";
-    string Command3 = PathToFiles+"Music.wav";
-    string Command4 = PathToFiles+"Stop.wav";
+    //Setting Each Command to Appropriate Audio File
+    string Command1 = PathToFiles+"Weather.wav";    //Open Palm
+    string Command2 = PathToFiles+"Time.wav";    //Thumbs Up
+    string Command3 = PathToFiles+"Music.wav";    //ILoveYou
+    string Command4 = PathToFiles+"Stop.wav";    //Closed Fist
     
     //thread Recognize_Thread(runRecognize);
     
