@@ -33,15 +33,19 @@ Before proceeding with the installation, ensure that you have a Raspberry Pi wit
 
 ### Step 5: Clone the SHIS Repository
 
-1. Clone the SHIS repository from GitHub to your local machine.
-
+1. Clone the SHIS repository from GitHub to your local machine by running this command:
+```bash
+git clone https://github.com/DoumitC/SHIS.git
+```
    
 ### Step 6: Navigate to Repo Folder and Run autorun.sh
 
 1. Navigate to the repository folder in the terminal.
-2. Run the autorun script to start the program:
-
-
+2. Run the autorun script to start the program by running the following commands:
+```bash
+cd SHIS
+./autorun.sh
+```
 ### Step 7: Register Device with Amazon Account
 
 1. If this is your first time running the program, execute it from the terminal and follow the on-screen instructions to register your device with your Amazon account.
