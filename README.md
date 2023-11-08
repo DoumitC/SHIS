@@ -85,6 +85,19 @@ cd SHIS
 
 Once you have completed the installation and setup, use the predefined hand gestures to control your smart home devices through Alexa. Ensure that your gestures are within the camera's field of view for accurate recognition.
 
+This program is preconfigured with specific hand gesture commands that interact with smart home features. Below are the default settings:
+
+- **Open Palm**: Triggers a request for the current weather.
+- **Thumbs Up**: Asks for the current time.
+- **I Love You (sign language gesture)**: Begins playing music.
+- **Closed Fist**: Stops any ongoing action or music playback.
+
+If you wish to modify the commands associated with each gesture, you can edit the `main.cpp` file with your preferred configurations. After making your changes, please run `setup.sh` to recompile the program and apply the new settings. This ensures that your adjustments are correctly integrated into the system.
+
+```bash
+cd SHIS
+./setup.sh
+```
 ## Contributing
 
 Contributions to the SHIS project are welcome. Please feel free to fork the repository, make changes, and submit pull requests.
