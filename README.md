@@ -21,6 +21,15 @@ Before proceeding with the installation, ensure that you have a Raspberry Pi wit
 
 1. Install Pulse Audio, which is a sound server used to manage audio input and output on your device.
 2. Pulse Audio will help in creating a virtual microphone to capture the audio signals for AVS.
+3. Run following commands:
+```bash
+# Update package list
+sudo apt update
+```
+```bash
+# Install PulseAudio
+sudo apt install pulseaudio pulseaudio-utils
+```
 
 ### Step 3: Add OpenCV Library
 
