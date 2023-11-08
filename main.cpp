@@ -144,10 +144,12 @@ int main() {
         this_thread::sleep_for(chrono::seconds(10));  // Give SDK some time to start
         
         ////////////
-        configEnv();
-        emptyOutTxt(FilePath);
+        configEnv(); //Configure RaspberryPi Environment
+        emptyOutTxt(FilePath); //Resets Gesture Text File
         time_t lastTimestamp = getTimestamp(FilePath);
         string CapturedGesture = "";
+        
+        //Checks for new recognized gesture and runs appropriate Command Audio
         while(true){
             CapturedGesture = fileController(FilePath, lastTimestamp);
             if (CapturedGesture != ""){
@@ -164,7 +166,7 @@ int main() {
                     
                 }else if (CapturedGesture == "Closed_Fist"){
                     write(pipefd[1], "h\n", 2);
-                    runAudio(Command4);
+                    runAudio(Command4); //Stop file
                     write(pipefd[1], "h\n", 2);
                     
                 }else if (CapturedGesture == "ILoveYou"){
@@ -173,15 +175,15 @@ int main() {
                     write(pipefd[1], "h\n", 2);
                     
                 }else if (CapturedGesture == "Thumb_Down"){
-                    write(pipefd[1], "q\n", 2);
+                    write(pipefd[1], "q\n", 2); //Quits Alexa AVS SDK
                     break;
-                    //runAudio("Stop.wav");
-                    //write(pipefd[1], "h\n", 2);
+                   
                     
                 }
             }else{
                 this_thread::sleep_for(chrono::seconds(1));
             }
+            //Exits Loop if Thumbs Down
             if (CapturedGesture == "Thumb_Down"){
                 break;
             }
@@ -193,10 +195,7 @@ int main() {
         waitpid(pid, &status, 0);  // Wait for child process to finish
         
         close(pipefd[1]);  // Close the write end after child is done
-        //system("^C");
         
-        //Recognize_Thread.join();
-        /////////////////
     }
     return 0;
 }
