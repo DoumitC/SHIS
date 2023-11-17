@@ -1,3 +1,31 @@
+/*
+    Smart Home for the Impaired Speech (SHIS) - Main Module
+
+    This program is part of the SHIS project, a system designed to enable individuals 
+    with speech disabilities to interact with and control smart home devices 
+    using hand gestures. The software translates these gestures into commands 
+    for smart home systems, specifically tailored for integration with Amazon's Alexa.
+
+    The main module of SHIS orchestrates the overall functionality, integrating 
+    hand gesture recognition with smart home command execution. It leverages 
+    the MediaPipe framework for gesture detection and interfaces with the Alexa Voice Service (AVS) 
+    to perform actions based on the recognized gestures.
+
+    Credits:
+    - Developer: Chady Doumit, Computer Science Student
+    - Mentor: Dr. Shengli Yuan
+    - University: University of Houston - Downtown
+    - Year: 2023
+
+    The SHIS project showcases the innovative application of computer vision and IoT technologies 
+    in enhancing accessibility for individuals with speech impairments, contributing 
+    to the development of more inclusive smart home solutions.
+
+    Note: This project is part of the academic curriculum under the guidance of Dr. Shengli Yuan
+    and is intended for educational and demonstrative purposes only.
+*/
+
+
 #include <iostream>
 #include <fstream>
 #include <string>
