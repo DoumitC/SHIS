@@ -191,12 +191,12 @@ def run(model: str, num_hands: int,
       if gestures:
         # print(gestures)
         category_name = gestures[0][0].category_name
-        score = round(gestures[0][0].score, 2)                  #CHANGE HERE
+        score = round(gestures[0][0].score, 2)                 
         result_text = category_name + ' (' + str(score) + ')'
         
         if category_name != "None":
           
-          
+          #Adds newly recognized gesture to Text File
             if time.time() - last_execution_time >= 5:
               # Execute your code here...
               
