@@ -89,7 +89,7 @@ def run(model: str, num_hands: int,
       width: The width of the frame captured from the camera.
       height: The height of the frame captured from the camera.
   """
-  #recorded_timestamp = time.time()  # Current time as the initial timestamp
+  
   
   # Start capturing video input from the camera
   cap = cv2.VideoCapture(camera_id)
@@ -216,7 +216,6 @@ def run(model: str, num_hands: int,
             else:
               print("Not yet 5 seconds since the last execution.")
             
-            #time.sleep(1)
         
 
         # Compute text size
